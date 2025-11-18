@@ -138,4 +138,17 @@ footer {
   .nav-toggle-label {
     display: none;
   }
+
+  /* Larger logo font size */
+  #logo {
+    font-size: 280%;
+    line-height: 75px;
+    margin: 0 0.5rem;
+  }
+
+  /* main content */
+  main {
+    /* Push main content down to account for larger header */
+    margin-top: 79px;
+  }
 }
