@@ -4,13 +4,11 @@
 
 /* Asterisk wildcard selector to override default styles added by the browser */
 
-/*
 *{
     margin: 0;
     padding: 0;
    box-sizing: border-box; 
 }
-   */
 
 /*General styles*/
 body {
@@ -65,6 +63,20 @@ h1 {
 /* style for active navigation link to show when user is on that particuar page - add bottom border */
 .active {
 border-bottom: 1px solid #3a3a3a;
+}
+
+/* Navbar styles with dropdown toggle */
+nav {
+    position: absolute;
+    background-color: #ffffff;
+
+/* Make nav bar take full width of the viewport */
+    width: 100%;
+/* Position nav bar aligned left directly below the header with the same box shadow */
+    left: 0;
+    padding: 0 1rem;
+ box-shadow: 0 2px 2px #3a3a3a;
+ display: none;
 }
 
 /*  main content styles */
