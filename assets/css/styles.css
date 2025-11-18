@@ -20,9 +20,20 @@ body {
 }
 /* header styles */
 header {
-    background-color: lightcoral;
+    background-color: #ffffff;
+    /*padding around the content inside the header*/
+    padding:  0 1rem;
+    /* Make header stay at the top of the page */
+    position: fixed;
+    /* Make header layered on top of other elements */
+    z-index: 99;
+    /* Make header take full width of the viewport */
+    width: 100%;
+    /*create a shadow below the header*/
+    box-shadow: 0 2px 2px #3a3a3a;
 }
 
+/* h1 styles */
 h1 {
     font-family: 'Oswald', sans-serif;
 }
