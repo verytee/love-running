@@ -1,91 +1,115 @@
 /* Google fonts import */
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@200..700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@200..700&display=swap");
 
 /* Asterisk wildcard selector to override default styles added by the browser */
 
-*{
-    margin: 0;
-    padding: 0;
-   box-sizing: border-box; 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /*General styles*/
 body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    /* Generic project style */
-    color: #3a3a3a;
-    font-family: 'Lato', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* Generic project style */
+  color: #3a3a3a;
+  font-family: "Lato", sans-serif;
 }
 /* header styles */
 header {
-    background-color: #ffffff;
-    /*padding around the content inside the header*/
-    padding:  0 1rem;
-    /* Make header stay at the top of the page */
-    position: fixed;
-    /* Make header layered on top of other elements */
-    z-index: 99;
-    /* Make header take full width of the viewport */
-    width: 100%;
-    /*create a shadow below the header*/
-    box-shadow: 0 2px 2px #3a3a3a;
+  background-color: #ffffff;
+  /*padding around the content inside the header*/
+  padding: 0 1rem;
+  /* Make header stay at the top of the page */
+  position: fixed;
+  /* Make header layered on top of other elements */
+  z-index: 99;
+  /* Make header take full width of the viewport */
+  width: 100%;
+  /*create a shadow below the header*/
+  box-shadow: 0 2px 2px #3a3a3a;
+  /* Use flexbox to align items inside the header */
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
 }
 
 /* style tag for any decendant of the header */
 header a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 /* h1 styles set to font, uppercase with 2px spacing and color */
 h1 {
-    font-family: 'Oswald', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: #252525;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #252525;
 }
 
 /* Navigation menu styles slightly larger font with 4px spacing and remove bullet points */
 #menu {
-    font-size: 110%;
-    letter-spacing: 4px;
-    list-style-type: none;
+  font-size: 110%;
+  letter-spacing: 4px;
+  list-style-type: none;
 }
 
 /*target list items inside the navigation menu and display them spaced out vertically*/
 #menu > li {
-    margin-bottom: 1em;
+  margin-bottom: 1em;
 }
 
 /* style for active navigation link to show when user is on that particuar page - add bottom border */
 .active {
-border-bottom: 1px solid #3a3a3a;
+  border-bottom: 1px solid #3a3a3a;
 }
 
 /* Navbar styles with dropdown toggle */
 nav {
-    position: absolute;
-    background-color: #ffffff;
+  position: absolute;
+  background-color: #ffffff;
 
-/* Make nav bar take full width of the viewport */
-    width: 100%;
-/* Position nav bar aligned left directly below the header with the same box shadow */
-    left: 0;
-    padding: 0 1rem;
- box-shadow: 0 2px 2px #3a3a3a;
- display: none;
+  /* Make nav bar take full width of the viewport */
+  width: 100%;
+  /* Position nav bar aligned left directly below the header with the same box shadow */
+  left: 0;
+  padding: 0 1rem;
+  box-shadow: 0 2px 2px #3a3a3a;
+  display: none;
+  /* Position nav bar directly below the parent element, header */
+  top: 100%;
+}
+
+/* Show nav bar when toggle is checked */
+#nav-toggle:checked ~ nav {
+  display: block;
+}
+
+/* Hide the checkbox used for toggling the nav bar */
+#nav-toggle {
+  display: none;
+}
+
+/* Style for the label used as the toggle button */
+.nav-toggle-label {
+  font-size: 2rem;
+  cursor: pointer; /* indicate it's clickable */
+  user-select: none; /* prevent accidental selection when tapping/clicking */
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
 }
 
 /*  main content styles */
 main {
-    background-color: lightblue;
-/* Make main elemtent take all available space to push footer down */
-    flex: 1 0 auto;
+  background-color: lightblue;
+  /* Make main elemtent take all available space to push footer down */
+  flex: 1 0 auto;
 }
 /* footer styles */
 footer {
-    background-color: orange;
+  background-color: orange;
 }
