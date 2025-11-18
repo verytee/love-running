@@ -3,11 +3,14 @@
 
 
 /* Asterisk wildcard selector to override default styles added by the browser */
-* {
+
+/*
+*{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+   box-sizing: border-box; 
 }
+   */
 
 /*General styles*/
 body {
