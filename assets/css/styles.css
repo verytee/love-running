@@ -39,12 +39,29 @@ header a {
     color: inherit;
 }
 
-/* h1 styles */
+/* h1 styles set to font, uppercase with 2px spacing and color */
 h1 {
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #252525;
+}
+
+/* Navigation menu styles slightly larger font with 4px spacing and remove bullet points */
+#menu {
+    font-size: 110%;
+    letter-spacing: 4px;
+    list-style-type: none;
+}
+
+/*target list items inside the navigation menu and display them spaced out vertically*/
+#menu > li {
+    margin-bottom: 1em;
+}
+
+/* style for active navigation link to show when user is on that particuar page - add bottom border */
+.active {
+border-bottom: 1px solid #3a3a3a;
 }
 
 /*  main content styles */
