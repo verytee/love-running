@@ -106,7 +106,7 @@ nav {
 /*  main content styles */
 main {
   background-color: lightblue;
-  /* Make main elemtent take all available space to push footer down */
+  /* Make main element take all available space to push footer down */
   flex: 1 0 auto;
   margin-top: 47px;
 }
@@ -155,8 +155,7 @@ footer {
 
 /* Media query: desktops and larger (992px and up) */
 @media screen and (min-width: 992px) {
-  /* Larger logo font size */
-  #menu a:hover  {
+  #menu a:hover{
   border-bottom: 1px solid #3a3a3a;
   }
 }
