@@ -184,6 +184,34 @@ align-items: center;
 justify-content: center;
 }
 
+/* Meetup times section */
+#times {
+  background: url("../images/dublin-city.webp") no-repeat center center/cover;
+  /* Handles responsivivity without media queries */
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#times div {
+  color: #fafafa;
+  /* Black semi-transparent background for text readability */
+  background-color: rgba(0, 0, 0, .6);
+  padding: 15px;
+  text-align: center;
+  /* Make each time block spread out across available width. 
+  This will not wrap on screens less than 400px wide.
+  Each times div will expand to fill available space on its row */
+  flex-basis: 200px;
+  flex-grow: 1;
+  /* Make the meetings times view as a grid over the background image behind */
+  border: 2px solid white;
+}
+
+/* override h3 color inside times section to be white */
+#times h3 {
+  color: #fafafa;
+}
+
 /* footer styles */
 #social-networks {
   text-align: center;
