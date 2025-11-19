@@ -28,6 +28,11 @@ h1, h2, h3 {
   color: #252525;
 }
 
+/* Hide elements that we want Google search to find but do not want visible on the site with the hidden-heading class */
+.hidden-heading {
+  display: none;
+}
+
 /* header styles */
 header {
   background-color: #ffffff;
