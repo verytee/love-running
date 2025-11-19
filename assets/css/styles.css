@@ -225,7 +225,7 @@ justify-content: center;
 }
 
 /* Photos treated like text with auto spacing. Style below to remove space between images. 
-This will affect alt text though, correction for this in style above */
+This will affect alt text though, correction for this in [line-height: 1em;] style above */
 #photos {
   line-height: 0;
 }
@@ -243,6 +243,16 @@ This will affect alt text though, correction for this in style above */
   font-size: 160%;
   padding: 5%;
   color: #3a3a3a;
+}
+
+
+/* Media query: large or landscape phones (576px and up) */
+@media screen and (min-width: 576px) {
+#photos {
+  /* Increase image columns on larger screens */
+  column-count: 2;
+  column-gap: 0;
+}
 }
 
 /* Media query: tablets and larger (768px and up) */
@@ -305,12 +315,21 @@ This will affect alt text though, correction for this in style above */
     text-align: right;
     align-self: flex-end;
   }
+
+  /*Gallery page styles */
+  #photos {
+    column-count: 3;
+  }
 }
 
 /* Media query: desktops and larger (992px and up) */
 @media screen and (min-width: 992px) {
   #menu a:hover{
   border-bottom: 1px solid #3a3a3a;
+  }
+
+    #photos {
+    column-count: 4;
   }
 }
 
