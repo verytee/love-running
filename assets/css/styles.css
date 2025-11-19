@@ -217,6 +217,19 @@ justify-content: center;
   color: #fafafa;
 }
 
+/* Gallery page styles */
+#photos img {
+  width: 100%;
+  /* Maintain alt text readability */
+  line-height: 1em;
+}
+
+/* Photos treated like text with auto spacing. Style below to remove space between images. 
+This will affect alt text though, correction for this in style above */
+#photos {
+  line-height: 0;
+}
+
 /* footer styles */
 #social-networks {
   text-align: center;
